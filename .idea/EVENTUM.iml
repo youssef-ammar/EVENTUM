@@ -136,5 +136,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Swiper" level="application" />
+    <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="leaflet" level="application" />
   </component>
 </module>
