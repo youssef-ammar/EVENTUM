@@ -38,7 +38,7 @@
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
         <div class="container-fluid">
-            <div class="d-flex align-items-center"><a class="navbar-brand"  href="index.html"><img  class="logo" src="{{ asset('img/logo_eventum.svg') }}" alt="Eventum logo"></a>
+            <div class="d-flex align-items-center"><a class="navbar-brand"  href="{{ path('home') }}"><img  class="logo" src="{{ asset('img/logo_eventum.svg') }}" alt="Eventum logo"></a>
                 <form class="form-inline d-none d-sm-flex" action="#" id="search">
                     <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3">
                         <label class="label-absolute" for="search_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
@@ -60,17 +60,20 @@
                     </div>
                 </form>
                 <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item"><a class="nav-link" href="login.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Travel</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle " id="homeDropdownMenuLink" href="{{ path('home') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Home</a>
+                        <div class="dropdown-menu" aria-labelledby="homeDropdownMenuLink"><a class="dropdown-item" href="index.html">Rooms</a><a class="dropdown-item" href="index-2.html">Restaurants</a><a class="dropdown-item" href="index-3.html">Travel</a><a class="dropdown-item" href="index-4.html">Real Estate <span class="badge badge-info-light ml-1 mt-n1">New</span></a></div>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="login.html">Sign in</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
-                    <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="user-add-0.html">Add an Event</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ path('event') }}">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ path('travel') }}">Travel</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="{{ path('contact') }}">Contact</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="{{ path('login') }}">Sign in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ path('register') }}">Sign up</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="{{ path('add') }}">Add an Event</a></li>
                 </ul>
             </div>
         </div>
@@ -228,7 +231,7 @@
     </div>
     {% endblock %}
 </footer>
-<!-- JavaScript files-->
+
 <script>
     // ------------------------------------------------------- //
     //   Inject SVG Sprite -
