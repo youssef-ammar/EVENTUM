@@ -29,13 +29,7 @@ class LinkController extends AbstractController
     {
         return $this->render('camping.html.twig');
     }
-    /**
-     * @Route("/add", name="add")
-     */
-    public function add(): Response
-    {
-        return $this->render('add_event.html.twig');
-    }
+
     /**
      * @Route("/contact", name="contact")
      */
@@ -78,6 +72,33 @@ class LinkController extends AbstractController
     {
         return $this->render('event.html.twig');
     }
-
+    /**
+     * @Route("/addst1", name="addst1")
+     */
+    public function addst1(): Response
+    {
+        return $this->render('add_event_st1.html.twig');
+    }
+    /**
+     * @Route("/addst2", name="addst2")
+     */
+    public function addst2(): Response
+    {
+        return $this->render('add_event_st2.html.twig');
+    }
+    /**
+     * @Route("/addst3", name="addst3")
+     */
+    public function addst3(): Response
+    {
+        return $this->render('add_event_st3.html.twig');
+    }
+    /**
+     * @Route("/addst4", name="addst4")
+     */
+    public function addst4(): Response
+    {
+        return $this->render('add_event_st4.html.twig');
+    }
 
 }

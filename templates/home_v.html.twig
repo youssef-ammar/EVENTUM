@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Directory Theme by Bootstrapious</title>
+    <title>EVENTUM</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -41,12 +41,12 @@
 {{ parent() }}
 
 <section class="d-flex align-items-center dark-overlay bg-cover"
-         style="background-image: url('{{  asset("img/photo/photo-1525610553991-2bede1a236e2.jpg") }}');">
+         style="background-image: url('{{  asset("img/eventum.png") }}');">
     <div class="container py-6 py-lg-7 text-white overlay-content text-center">
         <div class="row">
             <div class="col-xl-10 mx-auto">
-                <h1 class="display-3 font-weight-bold text-shadow">Discover EVENTUM</h1>
-                <p class="text-lg text-shadow">Uncover the best places to camp, travel, and events nearest to you.</p>
+                <h1 class="display-3 font-weight-bold text-shadow"><br></h1>
+                <p class="text-lg text-shadow"><br></p>
             </div>
 
         </div>
@@ -63,14 +63,14 @@
                 <h2>What's trending</h2>
             </div>
             <div class="col-md-4 d-md-flex align-items-center justify-content-end"><a class="text-muted text-sm"
-                                                                                      href="category.html">
+                                                                                      href="{{ path('error') }}">
                     See all cities<i class="fas fa-angle-double-right ml-2"></i></a></div>
         </div>
         <div class="row">
             <div class="d-flex align-items-lg-stretch mb-4 col-lg-8">
                 <div class="card shadow-lg border-0 w-100 border-0 hover-animate"
                      style="background: center center url('{{ asset("img/photo/photo-1449034446853-66c86144b0ad.jpg") }}')  no-repeat; background-size: cover;">
-                    <a class="tile-link" href="category.html"> </a>
+                    <a class="tile-link" href="{{ path('error') }}"> </a>
                     <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
                         <h3 class="text-shadow text-uppercase mb-0">San Francisco</h3>
                     </div>
@@ -79,7 +79,7 @@
             <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
                 <div class="card shadow-lg border-0 w-100 border-0 hover-animate"
                      style="background: center center url('{{ asset("img/photo/photo-1429554429301-1c7d5ae2d42e.jpg") }}') no-repeat; background-size: cover;">
-                    <a class="tile-link" href="category.html"> </a>
+                    <a class="tile-link" href="{{ path('error') }}"> </a>
                     <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
                         <h3 class="text-shadow text-uppercase mb-0">Los Angeles</h3>
                     </div>
@@ -90,7 +90,7 @@
             <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
                 <div class="card shadow-lg border-0 w-100 border-0 hover-animate"
                      style="background: center center url('{{ asset("img/photo/photo-1523430410476-0185cb1f6ff9.jpg") }}') no-repeat; background-size: cover;">
-                    <a class="tile-link" href="category.html"> </a>
+                    <a class="tile-link" href="c{{ path('error') }}"> </a>
                     <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
                         <h3 class="text-shadow text-uppercase mb-0">Santa Monica</h3>
                     </div>
@@ -99,7 +99,7 @@
             <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
                 <div class="card shadow-lg border-0 w-100 border-0 hover-animate"
                      style="background: center center url('{{ asset("img/photo/photo-1505245208761-ba872912fac0.jpg") }}') no-repeat; background-size: cover;">
-                    <a class="tile-link" href="category.html"> </a>
+                    <a class="tile-link" href="{{ path('error') }}"> </a>
                     <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
                         <h3 class="text-shadow text-uppercase mb-0">San Diego</h3>
                     </div>
@@ -108,7 +108,7 @@
             <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
                 <div class="card shadow-lg border-0 w-100 border-0 hover-animate"
                      style="background: center center url('{{ asset("img/photo/photo-1519867850-74775a87e783.jpg") }}') no-repeat; background-size: cover;">
-                    <a class="tile-link" href="category.html"> </a>
+                    <a class="tile-link" href="{{ path('error') }}"> </a>
                     <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
                         <h3 class="text-shadow text-uppercase mb-0">Fresno</h3>
                     </div>
@@ -117,65 +117,61 @@
         </div>
     </div>
 </section>
-<section class="pt-4 pb-6">
-    <div class="container">
-        <div class="pb-lg-4">
-            <p class="subtitle text-secondary">One-of-a-kind directory app</p>
-            <h2 class="mb-5">Discover great local businesses around you</h2>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                <div class="px-0 pr-lg-3">
-                    <div class="icon-rounded mb-3 bg-secondary-light">
-                        <svg class="svg-icon w-2rem h-2rem text-secondary">
-                            <use xlink:href="#love-pin-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="h6 text-uppercase">Find the perfect place</h3>
-                    <p class="text-muted text-sm">One morning, when Gregor Samsa woke from troubled dreams, he found
-                        himself transformed in his bed in</p>
-                </div>
+    <section class="pt-4 pb-6">
+        <div class="container">
+            <div class="pb-lg-4">
+                <p class="subtitle text-secondary">One-of-a-kind directory app</p>
+                <h2 class="mb-5">Discover great local businesses around you</h2>
             </div>
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                <div class="px-0 pr-lg-3">
-                    <div class="icon-rounded mb-3 bg-primary-light">
-                        <svg class="svg-icon w-2rem h-2rem text-primary">
-                            <use xlink:href="#pay-by-card-1"></use>
-                        </svg>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="px-0 pr-lg-3">
+                        <div class="icon-rounded mb-3 bg-secondary-light">
+                            <svg class="svg-icon w-2rem h-2rem text-secondary">
+                                <use xlink:href="#love-pin-1"> </use>
+                            </svg>
+                        </div>
+                        <h3 class="h6 text-uppercase">Find the perfect place</h3>
+                        <p class="text-muted text-sm">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
                     </div>
-                    <h3 class="h6 text-uppercase">Book your seats</h3>
-                    <p class="text-muted text-sm">The bedding was hardly able to cover it and seemed ready to slide off
-                        any moment. His many legs, pit</p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                <div class="px-0 pr-lg-3">
-                    <div class="icon-rounded mb-3 bg-secondary-light">
-                        <svg class="svg-icon w-2rem h-2rem text-secondary">
-                            <use xlink:href="#food-1"></use>
-                        </svg>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="px-0 pr-lg-3">
+                        <div class="icon-rounded mb-3 bg-primary-light">
+                            <svg class="svg-icon w-2rem h-2rem text-primary">
+                                <use xlink:href="#pay-by-card-1"> </use>
+                            </svg>
+                        </div>
+                        <h3 class="h6 text-uppercase">Book your seats</h3>
+                        <p class="text-muted text-sm">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
                     </div>
-                    <h3 class="h6 text-uppercase">Enjoy your evening</h3>
-                    <p class="text-muted text-sm">His room, a proper human room although a little too small, lay
-                        peacefully between its four familiar </p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                <div class="px-0 pr-lg-3">
-                    <div class="icon-rounded mb-3 bg-primary-light">
-                        <svg class="svg-icon w-2rem h-2rem text-primary">
-                            <use xlink:href="#pay-1"></use>
-                        </svg>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="px-0 pr-lg-3">
+                        <div class="icon-rounded mb-3 bg-secondary-light">
+                            <svg class="svg-icon w-2rem h-2rem text-secondary">
+                                <use xlink:href="#food-1"> </use>
+                            </svg>
+                        </div>
+                        <h3 class="h6 text-uppercase">Enjoy your evening</h3>
+                        <p class="text-muted text-sm">His room, a proper human room although a little too small, lay peacefully between its four familiar </p>
                     </div>
-                    <h3 class="h6 text-uppercase">Earn points</h3>
-                    <p class="text-muted text-sm">Samsa was a travelling salesman - and above it there hung a picture
-                        that he had recently cut out of </p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="px-0 pr-lg-3">
+                        <div class="icon-rounded mb-3 bg-primary-light">
+                            <svg class="svg-icon w-2rem h-2rem text-primary">
+                                <use xlink:href="#pay-1"> </use>
+                            </svg>
+                        </div>
+                        <h3 class="h6 text-uppercase">Earn points</h3>
+                        <p class="text-muted text-sm">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    <section>   </section>
+    </section>
+
 <section class="py-6 bg-gray-100">
     <div class="container">
         <div class="text-center pb-lg-4">
@@ -196,7 +192,7 @@
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1430931071372-38127bd472b8.jpg") }}');
                                          min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Blue Hill</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -233,7 +229,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1436018626274-89acd1d6ec9d.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Plutorque</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -270,7 +266,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1466978913421-dad2ebd01d17.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Junipoor</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -307,7 +303,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1477763858572-cda7deaa9bc5.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Musix</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -344,7 +340,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1504087697492-238a6bf49ce8.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Prosure</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -382,7 +378,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1505275350441-83dcda8eeef5.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Take That</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -420,7 +416,7 @@
                         <div class="card h-100 border-0 shadow">
                             <div class="card-img-top overflow-hidden dark-overlay bg-cover"
                                  style="background-image: url('{{ asset("img/photo/restaurant-1430931071372-38127bd472b8.jpg") }}'); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Blue Hill</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -459,7 +455,7 @@
                                  style="background-image:
                                          url('{{ asset("img/photo/restaurant-1436018626274-89acd1d6ec9d.jpg") }}')
                                          ; min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
+                                <a class="tile-link" href="{{ path('error') }}"></a>
                                 <div class="card-img-overlay-bottom z-index-20">
                                     <h4 class="text-white text-shadow">Plutorque</h4>
                                     <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i
@@ -655,7 +651,7 @@
     <section class="py-7 position-relative dark-overlay"><img class="bg-image" src="{{ asset('img/photo/photo-1497436072909-60f360e1d4b1.jpg') }}" alt="">
         <div class="container">
             <div class="overlay-content text-white py-lg-5">
-                <h3 class="display-3 font-weight-bold text-serif text-shadow mb-5">Ready for your next camping?</h3><a class="btn btn-light" href="category-rooms.html">Get started</a>
+                <h3 class="display-3 font-weight-bold text-serif text-shadow mb-5">Ready for your next camping?</h3><a class="btn btn-light" href="{{ path('camping') }}">Get started</a>
             </div>
         </div>
     </section>
@@ -731,7 +727,7 @@
     </section>
 <!-- Divider Section-->
 <section class="py-6 py-lg-7 position-relative dark-overlay"><img class="bg-image"
-                                                                  src="{{ asset("img/photo/photo-1507915135761-41a0a222c709.jpg") }}"
+                                                                  src="{{ asset("img/travel.jpg") }}"
                                                                   alt="">
     <div class="container">
         <div class="overlay-content text-white py-lg-5 text-center">
@@ -740,7 +736,7 @@
             <p class="lead text-shadow mb-5">One morning, when Gregor Samsa woke from troubled dreams, he found himself
                 transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head
                 a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p><a
-                    class="btn btn-primary" href="category-rooms.html">Get started</a>
+                    class="btn btn-primary" href="{{ path('travel') }}">Get started</a>
         </div>
     </div>
 </section>
